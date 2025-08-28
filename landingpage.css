@@ -187,10 +187,8 @@ footer ul li{
         font-size: 1.1rem;
     }
     .headline article {
-        width: 98vw;
         height: auto;
         padding: 10px 2vw;
-        background-size: 80vw;
         background-position: center right;
         font-size: 1.1rem;
     }
