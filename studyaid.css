@@ -239,7 +239,7 @@ footer{
     .add-flashcard-form button,
     .pomodoro-controls button {
         width: 100%;
-        max-width: 100%;
+        max-width: 50%;
         box-sizing: border-box;
         font-size: 1rem;
     }
