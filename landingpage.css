@@ -141,3 +141,80 @@ footer ul li{
     list-style: none;
     margin-bottom: 10px;
 }
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: row;
+        height: auto;
+        padding: 10px 2vw;
+        font-size: 1rem;
+        position: relative;
+    }
+    .hamburger {
+        display: grid;
+        margin: 10px 0 0 0;
+        position: absolute;
+        right: 200px;
+        top: 55px;
+        left: 10px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 55px;
+        background: #1a237e;
+        padding: 20px 0;
+        width: 100vw;
+        z-index: 1000;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        gap: 10px;
+    }
+    nav ul.togle {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .headline article {
+        width: 98vw;
+        height: auto;
+        padding: 10px 2vw;
+        background-size: 80vw;
+        background-position: center right;
+        font-size: 1.1rem;
+    }
+    .subheadline img {
+        width: 90vw;
+        max-width: 350px;
+    }
+    .subheadline {
+        margin-top: 40px;
+        padding: 0 2vw;
+    }
+    .subheadline button {
+        width: 100%;
+        max-width: 300px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 2vw;
+        margin-top: 40px;
+    }
+    footer section ul {
+        padding: 0;
+    }
+}
