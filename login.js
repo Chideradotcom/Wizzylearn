@@ -10,7 +10,7 @@ function getItem(event){
     const password = document.querySelector(".password").value
     if(email==retrievedInfo.email && password==retrievedInfo.password){
         alert("Success!")
-        window.location.href=window.location.origin+"/study-aid-project/studyaid.html"
+        window.location.href=window.location.origin + "/studyaid.html"
     } else{
         console.error("Try again");
         alert("Incorrect email or password!")
