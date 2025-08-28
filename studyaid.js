@@ -67,5 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
             showFeature(feature)
         })
     })
+    showFeature("home")
 })
 

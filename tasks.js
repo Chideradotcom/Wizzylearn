@@ -18,7 +18,7 @@ let deletedTask=""
 let deletingItem=false
 let deleteId
 form.addEventListener("submit", addItems)
-window.addEventListener("load", loadTasks)
+// window.addEventListener("load", loadTasks)
 clearButton.addEventListener("click", clearTasks)
 hideButton.addEventListener("click", hideTasks)
 showButton.addEventListener("click", showTasks)

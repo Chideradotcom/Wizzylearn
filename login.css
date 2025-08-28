@@ -155,3 +155,78 @@ button:hover{
 a{
     color: var(--accent-color);
 }
+
+@media (max-width: 800px) {
+    header{
+        display: none;
+    }
+    .container {
+        width: 98vw;
+        min-width: unset;
+        max-width: 99vw;
+        padding: 18px 4vw;
+        border-radius: 0;
+        margin: 80px auto 0 auto;
+        box-sizing: border-box;
+    }
+    .container h3 {
+        max-width: 100vw;
+        font-size: 1.1rem;
+        padding: 8px;
+    }
+    .form-control {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 18px;
+    }
+    .form-control label {
+        margin-bottom: 6px;
+        margin-right: 0;
+        font-size: 1rem;
+    }
+    .form-control input,
+    .password-wrapper input[type="password"],
+    .password-wrapper input[type="text"] {
+        width: 100%;
+        max-width: 100%;
+        font-size: 1rem;
+        margin-left: 0;
+        padding-right: 2.2em;
+    }
+    .toggle-password {
+        right: 10px;
+        font-size: 1.2em;
+    }
+    .terms {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .login, .terms .signup, button {
+        width: 100%;
+        min-width: unset;
+        max-width: 100%;
+        margin: 0;
+        font-size: 1rem;
+    }
+    .tandc {
+        font-size: 0.95rem;
+        padding: 0 2px;
+        text-align: left;
+    }
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 8px 2vw;
+        font-size: 1rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0;
+    }
+    nav ul li {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+}
