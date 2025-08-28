@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projects/fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+    <script defer src="signup.js"></script>
+    <title>Sign Up</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">WizzyLearn</a></h1>
+        <nav>
+            <ul>
+                <li>Join Now</li>
+                <li>About</li>
+                <li>FAQs</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="topic">
+            <h3>Join the fun now!!!</h3>
+        </div>
+        <form method="post" id="form">
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" placeholder="John Doe" name="name" id="name" class="name" required>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" placeholder="example@gmail.com" name="email" id="email" class="email" required>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <div class="password-wrapper" style="position: relative; width: 100%;"><input type="password" placeholder="*********" id="password" class="password" required style="width: 100%;">
+                <span class="toggle-password" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;"><i class="fa fa-eye"></i></span>
+                </div>
+            </div>
+            <p class="tandc">By clicking the button below, you agree to the <a href="#">terms and conditions</a></p>
+            <div class="terms">
+                <input type="checkbox" class="checkbox">I agree
+                <button class="signup" type="submit">Sign Up</button> <!--to be replaced with js code-->
+            </div>
+            <div><a href="login.html">Login</a> if you already have an account</div>
+        </form>
+    </section>
+</body>
+</html>

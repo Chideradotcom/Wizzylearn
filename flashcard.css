@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --bg-color: #0d0d0d;
+    --primary-color: #6A0DAD;
+    --secondary-color: #FF4DA6;
+    --neutral-color: #f5f5f5;
+    --accent-color: #ffd700;
+}
+
+#flashcards-section .flashcard-container{
+    background: var(--primary-color);
+    color: var(--neutral-color);
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+#flashcards-section .flashcard{
+    margin-bottom: 1rem;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--secondary-color);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#flashcards-section .flashcard-controls button,
+#flashcards-section .add-flashcard-form button,
+#flashcards-section .flashcard-actions button,
+#flashcards-section .clear-flashcards {
+    margin: 0.5rem 0.25rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    background: var(--accent-color);
+    color: var(--bg-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#flashcards-section .add-flashcard-form {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+#flashcards-section .add-flashcard-form input{
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+}

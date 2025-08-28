@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --bg-color: #0d0d0d;
+    --primary-color: #6A0DAD;
+    --secondary-color: #FF4DA6;
+    --neutral-color: #f5f5f5;
+    --accent-color: #ffd700;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--neutral-color);
+    margin: 0;
+}
+
+#tasks-section .container{
+    background: var(--primary-color);
+    color: var(--neutral-color);
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem 2.5rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+#tasks-section h1 {
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+#tasks-section .form-control{
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+#tasks-section input[type="text"]{
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    font-size: 1rem;
+    background: var(--neutral-color);
+    color: var(--bg-color);
+}
+
+#tasks-section .save-btn {
+    padding: 10px 18px;
+    border-radius: 0 6px 6px 0;
+    background: var(--accent-color);
+    color: var(--bg-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    border: none;
+}
+
+#tasks-section .save-btn:hover{
+    background: var(--secondary-color);
+}
+
+#tasks-section .task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background: var(--secondary-color);
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+#tasks-section .task p{
+    flex: 1;
+    margin: 0;
+    color: var(--neutral-color);
+    font-size: 1rem;
+}
+
+#tasks-section .edit-btn,
+#tasks-section .del-btn{
+    margin-left: 8px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#tasks-section .edit-btn:hover,
+#tasks-section .del-btn:hover{
+    background: var(--bg-color);
+    color: var(--accent-color);
+}
+
+#tasks-section .msg{
+    border: 2px solid transparent;
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+#tasks-section .msg.success{
+    border-color: #0a6c0a;
+    color: #ffffff;
+    background-color: rgba(0, 255, 0, 0.15);
+}
+#tasks-section .msg.danger{
+    border-color: #6c0a0a;
+    color: #ffffff;
+    background-color: rgba(255, 0, 0, 0.15);
+}
+
+#tasks-section .hide-msg{
+    visibility: hidden;
+}
+
+#tasks-section footer{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#tasks-section footer button{
+    border-radius: 4px;
+    padding: 8px 14px;
+    background: var(--bg-color);
+    color: var(--neutral-color);
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#tasks-section footer button:hover{
+    background: var(--accent-color);
+    color: var(--bg-color);
+}
+
+#tasks-section .hide{
+    display: none;
+}

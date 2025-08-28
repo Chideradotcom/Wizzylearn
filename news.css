@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --bg-color: #0d0d0d;
+    --primary-color: #6A0DAD;
+    --secondary-color: #FF4DA6;
+    --neutral-color: #f5f5f5;
+    --accent-color: #ffd700;
+}
+
+#news-section{
+    padding: 2rem 0;
+}
+
+#news-section .news-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--neutral-color);
+    padding: 1rem 2rem;
+    border-radius: 1rem 1rem 0 0;
+    margin-bottom: 1rem
+}
+
+#news-section .news-search-input{
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 10px 12px;
+    border-radius: 6px;
+    width: 14rem;
+    outline: none;
+    color: var(--neutral-color);
+}
+
+#news-section .news-search-input::placeholder{
+    color: rgb(255, 255, 255, 0.75);
+}
+
+#news-section .news-content-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+#news-section .news-card{
+    background: var(--bg-color);
+    color: var(--neutral-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadown 0.3s;
+}
+
+#news-section .news-card:hover{
+    box-shadow: 0 0 15px rgb(236, 72, 153, 0.4);
+}
+
+#news-section .news-card-image-wrapper{
+    height: 180px;
+    overflow: hidden;
+}
+
+#news-section .news-card-image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+#news-section .news-card-content{
+    padding: 1rem;
+}
+
+#news-section .news-card-date,
+#news-section .news-card-description{
+    color: #bdbdbd;
+    font-size: 0.95rem;
+}
+
+#news-section .news-card-title a{
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#news-section .news-card-title a:hover{
+    text-decoration: underline;
+}
+
+#news-section .news-show-message{
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--secondary-color);
+}
